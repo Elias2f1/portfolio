@@ -1,0 +1,33 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [main] # Se déclenche sur push vers 'main'
+
+permissions:
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run generate
+
+      - name: Upload artifact
+        uses: actions/upload-pages-asset@v2
+        with:
+          path: "dist/"
+
+      - name: Deploy
+        uses: actions/deploy-pages@v2
