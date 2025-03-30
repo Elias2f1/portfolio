@@ -4,7 +4,6 @@ on:
   push:
     branches: [main]
 
-# perms
 permissions:
   pages: write
   id-token: write
@@ -12,19 +11,18 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:  # Ajoutez cette section
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 20
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Generate static site
-        run: npm run generate
-
-      - name: Deploy to GitHub Pages
+      - run: npm ci
+      - run: npm run generate
+      - uses: actions/upload-pages-asset@v2
+        with:
+          path: 'dist/'
+      - name: Deploy
         uses: actions/deploy-pages@v2
