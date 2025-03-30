@@ -1,0 +1,1 @@
+import{_ as o,c as n,a as s,b as r,w as a,e as c,o as _,d}from"./BJppP_46.js";const l={};function u(i,e){const t=c;return _(),n("div",null,[e[1]||(e[1]=s("h1",null,"Accueil",-1)),r(t,{to:"/epreuves/e4"},{default:a(()=>e[0]||(e[0]=[d("Voir E4")])),_:1})])}const f=o(l,[["render",u]]);export{f as default};
