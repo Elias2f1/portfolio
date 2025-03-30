@@ -11,23 +11,31 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Step 1: Check out the repository
       - uses: actions/checkout@v3
+
+      # Step 2: Enable Corepack (for Yarn or PNPM support)
       - run: corepack enable
+
+      # Step 3: Set up Node.js
       - uses: actions/setup-node@v3
         with:
           node-version: "18"
 
-      - run: npx nypm install
+      # Step 4: Install dependencies
+      - run: npm install
+
+      # Step 5: Build the Nuxt project
       - run: npm run build
         env:
           NITRO_PRESET: github_pages
 
+      # Step 6: Upload artifact for deployment
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./.output/public
 
-  # Deployment job
   deploy:
     # Add a dependency to the build job
     needs: build
