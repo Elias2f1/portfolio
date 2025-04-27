@@ -15,9 +15,6 @@
           <li><button @click="handleNav('#bts-sio')" class="hover:text-blue-300 w-full text-left">BTS SIO</button></li>
           <li><button @click="handleNav('#veille-tech')" class="hover:text-blue-300 w-full text-left">Veille Tech</button></li>
           <li><button @click="handleNav('#contact')" class="hover:text-blue-300 w-full text-left">Contact</button></li>
-          <li><NuxtLink to="/epreuves/E4" class="hover:text-blue-300 block">Épreuve E4</NuxtLink></li>
-          <li><NuxtLink to="/epreuves/E5" class="hover:text-blue-300 block">Épreuve E5</NuxtLink></li>
-          <li><NuxtLink to="/epreuves/E6" class="hover:text-blue-300 block">Épreuve E6</NuxtLink></li>
         </ul>
       </div>
       <div>
@@ -128,62 +125,24 @@
           </div>
         </div>
       </section>
-            <!-- Certifications Section -->
-            <section id="certifications" class="fade-in">
-        <h2 class="text-3xl font-bold text-blue-600 mb-6">Certifications et Diplômes</h2>
-        <h3 class="text-xl font-bold mt-8 mb-4">Certifications Atelier RGPD</h3>
-        <div class="grid grid-cols-3 gap-4">
-          <!-- Module 1 -->
-          <div class="text-center">
-            <a href="/pdf/RGPD_module_1.pdf" target="_blank" class="block mb-2">
-              <img src="/pdf/atelier.jpg" alt="Certification RGPD Module 1" class="w-32 h-32 object-cover mx-auto rounded">
-            </a>
-            <a href="/pdf/RGPD_module_1.pdf" download class="text-blue-600 hover:text-blue-800">Télécharger</a>
-          </div>
+           <!-- Certifications Section -->
+<section id="certifications" class="fade-in">
+  <h2 class="text-3xl font-bold text-blue-600 mb-6">Certifications et Diplômes</h2>
+  <p class="text-lg text-gray-700 mb-8">
+    Vous pouvez consulter toutes mes certifications en cliquant sur le bouton ci-dessous.
+  </p>
+  <div class="flex justify-center">
+    <a 
+      href="https://drive.google.com/drive/folders/1quOkRdcamXHUpRFcHIgLtSwx14SHYc0J?usp=sharing" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition font-semibold"
+    >
+      Voir mes certifications
+    </a>
+  </div>
+</section>
 
-          <!-- Module 2 -->
-          <div class="text-center">
-            <a href="/pdf/RGPD_module_2.pdf" target="_blank" class="block mb-2">
-              <img src="/pdf/atelier.jpg" alt="Certification RGPD Module 2" class="w-32 h-32 object-cover mx-auto rounded">
-            </a>
-            <a href="/pdf/RGPD_module_2.pdf" download class="text-blue-600 hover:text-blue-800">Télécharger</a>
-          </div>
-
-          <!-- Module 3 -->
-          <div class="text-center">
-            <a href="/pdf/RGPD_module_3.pdf" target="_blank" class="block mb-2">
-              <img src="/pdf/atelier.jpg" alt="Certification RGPD Module 3" class="w-32 h-32 object-cover mx-auto rounded">
-            </a>
-            <a href="/pdf/RGPD_module_3.pdf" download class="text-blue-600 hover:text-blue-800">Télécharger</a>
-          </div>
-
-          <!-- Module 4 -->
-          <div class="text-center">
-            <a href="/pdf/RGPD_module_4.pdf" target="_blank" class="block mb-2">
-              <img src="/pdf/atelier.jpg" alt="Certification RGPD Module 4" class="w-32 h-32 object-cover mx-auto rounded">
-            </a>
-            <a href="/pdf/RGPD_module_4.pdf" download class="text-blue-600 hover:text-blue-800">Télécharger</a>
-          </div>
-
-          <!-- Module 5 -->
-          <div class="text-center">
-            <a href="/pdf/RGPD_module_5.pdf" target="_blank" class="block mb-2">
-              <img src="/pdf/atelier.jpg" alt="Certification RGPD Module 5" class="w-32 h-32 object-cover mx-auto rounded">
-            </a>
-            <a href="/pdf/RGPD_module_5.pdf" download class="text-blue-600 hover:text-blue-800">Télécharger</a>
-          </div>
-        </div>
-
-        <h3 class="text-xl font-bold mt-8 mb-4">Certifications MOOC ANSSI</h3>
-        <div class="grid grid-cols-3 gap-4">
-          <div class="text-center">
-            <a href="/pdf/certif_secnum_ANSSI.pdf" target="_blank" class="block mb-2">
-              <img src="/pdf/secnum.jpeg" alt="Certification MOOC ANSSI" class="w-32 h-32 object-cover mx-auto rounded">
-            </a>
-            <a href="/pdf/certif_secnum_ANSSI.pdf" download class="text-blue-600 hover:text-blue-800">Télécharger</a>
-          </div>
-        </div>
-      </section>
 
       <!-- Stages Section -->
       <section id="stages" class="fade-in py-12 px-4 md:px-8 bg-white rounded-lg shadow-md">
@@ -282,14 +241,40 @@
         </div>
       </section>
 
-      <!-- Compétences Section -->
-      <section id="competences" class="fade-in">
-        <h2 class="text-3xl font-bold text-blue-600 mb-4">Compétences</h2>
-        <p>
-          <strong>Techniques :</strong> HTML, CSS, JavaScript, Vue.js, PHP<br />
-          <strong>Outils :</strong> GitHub, Tailwind CSS, Postman
-        </p>
-      </section>
+     <!-- Compétences Section -->
+<section id="competences" class="fade-in">
+  <h2 class="text-3xl font-bold text-blue-600 mb-6">Compétences</h2>
+
+  <p class="mb-4"><strong>Techniques :</strong></p>
+  <ul class="list-disc pl-6 mb-6">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Bootstrap</li>
+    <li>PHP</li>
+    <li>JavaScript</li>
+    <li>MVC</li>
+    <li>WordPress</li>
+  </ul>
+
+  <p class="mb-4"><strong>Conception et gestion de bases de données :</strong></p>
+  <ul class="list-disc pl-6 mb-6">
+    <li>MySQL</li>
+    <li>UML avec JMERISE</li>
+    <li>MEA avec Modelio</li>
+  </ul>
+
+  <p class="mb-4"><strong>Développement d'application :</strong></p>
+  <ul class="list-disc pl-6 mb-6">
+    <li>Java</li>
+  </ul>
+
+  <p class="mb-4"><strong>Scripting et gestion de projet :</strong></p>
+  <ul class="list-disc pl-6">
+    <li>Bash</li>
+    <li>Trello</li>
+  </ul>
+</section>
+
 
       <!-- Projets Section -->
   <section id="projets" class="fade-in py-12 px-4 md:px-8 bg-gray-50">
@@ -377,139 +362,149 @@
         </div>
       </section>
 
-      <!-- Veille Techno Section -->
-      <section id="veille-tech" class="fade-in">
-        <h2 class="text-3xl font-bold text-blue-600 mb-4">Veille Technologique</h2>
-        <p>Ma veille porte sur les dernières tendances en développement web, comme Nuxt.js et Tailwind CSS.</p>
-      </section>
+     <!-- Veille Techno Section -->
+<section id="veille-tech" class="fade-in py-12 px-4 md:px-8 bg-white rounded-lg shadow-md">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-600 mb-8 text-center">Veille Technologique</h2>
+    <p class="text-gray-700 mb-6">
+      La veille technologique consiste à s'informer en continu sur les innovations, les évolutions et les nouvelles tendances dans le domaine du numérique et de l'informatique. 
+      Elle permet d'anticiper les changements, d'améliorer ses compétences et de rester compétitif dans un secteur en perpétuelle évolution.
+    </p>
+    <p class="text-gray-700 mb-8">
+      Le sujet de ma veille porte sur <strong>comment améliorer le SEO (Search Engine Optimization) d’un site web</strong>. 
+      Le SEO regroupe l'ensemble des techniques visant à optimiser la visibilité d'un site dans les résultats des moteurs de recherche comme Google.
+    </p>
+    <div class="text-center">
+      <a 
+        href="https://docs.google.com/spreadsheets/d/1eg9Jm9Mjbq3yj-9nTLyaGkXTRYz8YMh9Tw2JlnNw57o/edit?usp=sharing" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+      >
+        Consulter ma veille
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
       
-      <!-- Epreuves Section -->
-      <section id="epreuves" class="fade-in py-12 px-4 md:px-8 bg-white rounded-lg shadow-md">
-        <div class="max-w-4xl mx-auto">
-          <h2 class="text-3xl font-bold text-blue-600 mb-8 text-center">Épreuves BTS SIO</h2>
-          <div class="grid md:grid-cols-3 gap-6">
-            <!-- Carte E4 -->
-            <div class="bg-blue-50 rounded-lg border border-blue-200 overflow-hidden hover:shadow-lg transition">
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-blue-700 mb-3">E4</h3>
-                <p class="text-gray-600 mb-4">Solution Logicielle et Application Métier</p>
-                <ul class="list-disc pl-5 space-y-1 text-sm mb-5">
-                  <li>Projet en entreprise</li>
-                  <li>Coefficient: 5</li>
-                  <li>Soutenance: 1h</li>
-                </ul>
-              </div>
-              <div class="px-6 pb-4">
-                <NuxtLink 
-                  to="/epreuves/E4"
-                  class="w-full inline-flex justify-center items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
-                >
-                  <span>En savoir plus</span>
-                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </NuxtLink>
-              </div>
-            </div>
-
-            <!-- Carte E5 -->
-            <div class="bg-blue-50 rounded-lg border border-blue-200 overflow-hidden hover:shadow-lg transition">
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-blue-700 mb-3">E5</h3>
-                <p class="text-gray-600 mb-4">Solution d'Infrastructure</p>
-                <ul class="list-disc pl-5 space-y-1 text-sm mb-5">
-                  <li>Dossier technique</li>
-                  <li>Coefficient: 4</li>
-                  <li>Durée: 1h30</li>
-                </ul>
-              </div>
-              <div class="px-6 pb-4">
-                <NuxtLink 
-                  to="/epreuves/E5"
-                  class="w-full inline-flex justify-center items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
-                >
-                  <span>En savoir plus</span>
-                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </NuxtLink>
-              </div>
-            </div>
-
-            <!-- Carte E6 -->
-            <div class="bg-blue-50 rounded-lg border border-blue-200 overflow-hidden hover:shadow-lg transition">
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-blue-700 mb-3">E6</h3>
-                <p class="text-gray-600 mb-4">Parcours de Professionnalisation</p>
-                <ul class="list-disc pl-5 space-y-1 text-sm mb-5">
-                  <li>Rapport de stage</li>
-                  <li>Coefficient: 3</li>
-                  <li>Soutenance: 45min</li>
-                </ul>
-              </div>
-              <div class="px-6 pb-4">
-                <NuxtLink 
-                  to="/epreuves/E6"
-                  class="w-full inline-flex justify-center items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
-                >
-                  <span>En savoir plus</span>
-                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </NuxtLink>
-              </div>
-            </div>
-          </div>
+     <!-- Epreuves Section -->
+<section id="epreuves" class="fade-in py-12 px-4 md:px-8 bg-white rounded-lg shadow-md">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-600 mb-8 text-center">Épreuves BTS SIO</h2>
+    
+    <div class="grid md:grid-cols-3 gap-6">
+    
+      <!-- Carte E5 -->
+      <div class="bg-blue-50 rounded-lg border border-blue-200 overflow-hidden hover:shadow-lg transition">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-blue-700 mb-3">E5</h3>
+          <p class="text-gray-600 mb-4">Support et mise à disposition de services informatiques</p>
+          <ul class="list-disc pl-5 space-y-1 text-sm mb-5">
+            <li>Epreuve orale</li>
+            <li>Coefficient: 4</li>
+            <li>Durée: 40 minutes</li>
+          </ul>
         </div>
-      </section>
+        <div class="px-6 pb-4">
+          <a 
+            href="https://drive.google.com/drive/folders/1jKWU4ieqTuV15x2VGQUwixXtdfSNSSlR?usp=sharing" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-full inline-flex justify-center items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+          >
+            <span>En savoir plus</span>
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Carte E6 -->
+      <div class="bg-blue-50 rounded-lg border border-blue-200 overflow-hidden hover:shadow-lg transition">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-blue-700 mb-3">E6</h3>
+          <p class="text-gray-600 mb-4">Conception et développement d'applications</p>
+          <ul class="list-disc pl-5 space-y-1 text-sm mb-5">
+            <li>Epreuve orale</li>
+            <li>Coefficient: 4</li>
+            <li>Soutenance: 40 min (+1h30 de préparation)</li>
+          </ul>
+        </div>
+        <div class="px-6 pb-4">
+          <a 
+            href="https://drive.google.com/drive/folders/1NPUX4nha1JK0vMvG0Gd9IL6QPyZdUYlP?usp=sharing" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-full inline-flex justify-center items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+          >
+            <span>En savoir plus</span>
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div> <!-- <<< FERMETURE de la grid md:grid-cols-3 -->
+
+  </div> <!-- <<< FERMETURE de max-w-4xl -->
+</section> <!-- <<< FERMETURE de section -->
+
+
 
       <!-- Contact Section -->
-      <section id="contact" class="fade-in">
-        <h2 class="text-3xl font-bold text-blue-600 mb-4">Contact</h2>
-        <p>Si vous avez des questions ou des opportunités à me proposer, vous pouvez me contacter via le formulaire ci-dessous :</p>
+<section id="contact" class="fade-in">
+  <h2 class="text-3xl font-bold text-blue-600 mb-4">Contact</h2>
+  <p>Si vous avez des questions ou des opportunités à me proposer, vous pouvez me contacter via le formulaire ci-dessous :</p>
 
-        <form class="mt-6 space-y-4" @submit.prevent="submitForm">
-          <div>
-            <label for="name" class="block text-lg">Nom</label>
-            <input
-              type="text"
-              id="name"
-              v-model="form.name"
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
-              required
-            />
-          </div>
+  <form action="https://formsubmit.co/elatiaelias@gmail.com" method="POST" class="mt-6 space-y-4">
+    <div>
+      <label for="name" class="block text-lg">Nom</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+      />
+    </div>
 
-          <div>
-            <label for="email" class="block text-lg">Email</label>
-            <input
-              type="email"
-              id="email"
-              v-model="form.email"
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
-              required
-            />
-          </div>
+    <div>
+      <label for="email" class="block text-lg">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+      />
+    </div>
 
-          <div>
-            <label for="message" class="block text-lg">Message</label>
-            <textarea
-              id="message"
-              v-model="form.message"
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
-              rows="5"
-              required
-            ></textarea>
-          </div>
+    <div>
+      <label for="message" class="block text-lg">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        required
+        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+        rows="5"
+      ></textarea>
+    </div>
 
-          <button
-            type="submit"
-            class="px-6 py-2 bg-blue-600 text-white font-bold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
-          >
-            Envoyer
-          </button>
-        </form>
-      </section>
+    <button
+      type="submit"
+      class="px-6 py-2 bg-blue-600 text-white font-bold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+    >
+      Envoyer
+    </button>
+  </form>
+</section>
+
     </main>
   </div>
 </template>
