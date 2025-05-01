@@ -1,0 +1,1 @@
+export { default } from "file:///C:/Users/jiper/OneDrive%20-%20univ-rouen.fr/Bureau/SIO/PortfolioV2/portfolio/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

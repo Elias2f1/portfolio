@@ -1,0 +1,18 @@
+{
+  "@vite/client": {
+    "prefetch": true,
+    "isEntry": true,
+    "file": "@vite/client",
+    "css": [],
+    "module": true,
+    "resourceType": "script"
+  },
+  "C:/Users/jiper/OneDrive - univ-rouen.fr/Bureau/SIO/PortfolioV2/portfolio/node_modules/nuxt/dist/app/entry.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "isEntry": true,
+    "file": "C:/Users/jiper/OneDrive - univ-rouen.fr/Bureau/SIO/PortfolioV2/portfolio/node_modules/nuxt/dist/app/entry.js"
+  }
+}

@@ -1,0 +1,5 @@
+const app_vue_vue_type_style_index_0_lang = ".fade-in{animation:fadeIn 1s ease-out forwards;opacity:0;transform:translateY(20px)}@keyframes fadeIn{to{opacity:1;transform:translateY(0)}}.nuxt-link-exact-active{font-weight:600;--tw-text-opacity:1;color:rgb(147 197 253/var(--tw-text-opacity,1))}#parcours .timeline-bar{height:100%;left:1rem;position:absolute;width:.25rem;--tw-translate-x:-50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));--tw-bg-opacity:1;background-color:rgb(191 219 254/var(--tw-bg-opacity,1))}@media (min-width:768px){#parcours .timeline-bar{left:50%}}#certifications .certification-grid{display:grid;gap:1rem;grid-template-columns:repeat(3,minmax(0,1fr))}#stages .stage-card{border-left-width:4px;border-radius:.5rem;--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(239 246 255/var(--tw-bg-opacity,1));padding:1.5rem}";
+export {
+  app_vue_vue_type_style_index_0_lang as default
+};
+//# sourceMappingURL=entry-styles-2.mjs-LzaOOorq.js.map
